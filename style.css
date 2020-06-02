@@ -1,0 +1,35 @@
+#get-student{
+    margin-left: 300px;
+}
+.card{
+    margin: auto;
+    box-shadow: 3px 3px 5px red;
+}
+#button-div{
+    margin-left:23%;
+}
+#get-student{
+    float: left;
+}
+#spacer{
+    width:30px;
+}
+#get-question{
+    margin-left: 10px;
+}
+body{
+   background-image: url(./images/female-software-engineer-coding-on-computer-3861951.jpg);
+   height: 100%;
+}
+#student-div{
+    font-size: 55pt;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px red;
+    /* -webkit-text-stroke-width: .0005px;
+    -webkit-text-stroke-color: coral; */
+    font-family: Lobster;
+}
+.btn{
+    box-shadow: 3px 3px 5px red;
+}
