@@ -1,4 +1,3 @@
-import basicJavascriptModuleNames from "./module1names.js"
 let currentStudent = undefined;
 $(document).on("click", "#get-student", function () {
     

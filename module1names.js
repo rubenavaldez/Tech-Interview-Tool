@@ -45,5 +45,3 @@ const basicJavascriptModuleNames=[
 
 
 ];
-
-export {basicJavascriptModuleNames as basicJavascriptModuleNames};
