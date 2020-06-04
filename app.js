@@ -331,11 +331,12 @@ let studentArray = [
 ];
 // console.log(studentArray) 
 class Module {
-    constructor(name, subMods, pccArr, image){
+    constructor(name, subMods, pccArr, image, moduleURL){
         this.name = name;
         this.subMods = subMods;
         this.pccArr = [...pccArr];
         this.image = image;
+        this.moduleURL = moduleURL; 
     }
 }
 
@@ -348,7 +349,7 @@ const RWD = new Module("Responsive Web Design", 7, [
     {name:"CSS Flex Box", challenges:17},
     {name:"CSS Grid", challenges:22}
 
-], "./images/html_op.png")
+], "./images/html_op.png", "http://code.perseverenow.org/learn/responsive-web-design/")
 const JavaScript = new Module("JavaScript",9, [
        {name:"Basic Javascript", challenges:basicJavascriptModuleNames},
        {name:"ES6", challenges:ES6ModuleNames},
@@ -359,7 +360,7 @@ const JavaScript = new Module("JavaScript",9, [
        {name:"Object Oriented Programming", challenges:ObjectOrientedProgrammingModuleNames},
        {name:"Functional Programming", challenges:23},
        {name:"Intermediate Algorithm Scripting", challenges:21}],
-        "./images/javascript_new.png")
+        "./images/javascript_new.png", "http://code.perseverenow.org/learn/javascript-algorithms-and-data-structures/")
 
 const FEL = new Module("Front End Libraries",6, [
         {name:"Bootstrap", challenges:31},
@@ -368,22 +369,22 @@ const FEL = new Module("Front End Libraries",6, [
         {name:"React", challenges:48},
         {name:"Redux", challenges:17},
         {name:"React and Redux", challenges:10}
-],'./images/jquery2.png' )
+],'./images/jquery2.png', "http://code.perseverenow.org/learn/front-end-libraries/" )
 const DataVisualization = new Module("Data Visualization",2, [
     {name:"Data Visualization with D3", challenges:29},
-    {name:"JSON APIs and Ajax", challenges:9}] )
+    {name:"JSON APIs and Ajax", challenges:9}], "", "http://code.perseverenow.org/learn/data-visualization/" )
    // console.log(RWD)
 
 const APIandMicro = new Module("FAPI's and Microservices",3, [
     {name:"Managing Packages with Npm", challenges:10},
     {name:"Basic Node and Express", challenges:12},
     {name:"MongoDB and Mongoose", challenges:9}
-]) 
+], "","http://code.perseverenow.org/learn/apis-and-microservices/" ) 
 const InfoSec = new Module("Information Security with HelmetJS",3, [
     {name:"Information Security with HelmetJS", challenges:14},
     {name:"Quality Assurance and Testing with Chai", challenges:24},
     {name:"Advanced Node and Express", challenges:22}
-])   
+],"", "http://code.perseverenow.org/learn/information-security-and-quality-assurance/")   
 
 //console.log(JavaScript)
 const moduleArray= [RWD, JavaScript, FEL, DataVisualization, APIandMicro, InfoSec] // add these submodule as you progres
@@ -424,8 +425,10 @@ $(document).on("click", "#get-question", function () {
         let questionSubmodule = moduleArray[moduleIndex].pccArr[
         Math.floor(Math.random() *moduleSelector)
         ]
-
-
+        let challengeText = questionSubmodule.challenges[Math.ceil(Math.random() *
+            questionSubmodule.challenges.length-1)]; 
+        let challengeUrl = moduleArray[moduleIndex].moduleURL + questionSubmodule.name.toLowerCase().split(" ").join("-") + "/" +challengeText.toLowerCase().split(" ").join("-") ; // need submodule url piece
+            console.log(challengeUrl)
         // console.log("Question Submodule")
 
         //Push the submodule and challenge to HTML
@@ -434,13 +437,13 @@ $(document).on("click", "#get-question", function () {
         
         // $("#challenge-div").text("Challenge " +Math.ceil(Math.random() *
         //     questionSubmodule.challenges))
-        $("#challenge-div").text(questionSubmodule.challenges[Math.ceil(Math.random() *
-        questionSubmodule.challenges.length-1)])
+        $("#challenge-div").text(challengeText)
         
         
         
             $("#module-img").attr("src",moduleArray[moduleIndex].image)
-
+            
+            
 
 
 
