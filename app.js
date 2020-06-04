@@ -178,7 +178,7 @@ const DebuggingModuleNames=[
     "Understanding the Differences between the freeCodeCamp and Browser Console",
     "Use typeof to Check the Type of a Variable",
     "Catch Misspelled Variable and Function Names",
-    "Catch Unclosed Parentheses, Brackets, Braces and Quotes",
+    "Catch Unclosed Parentheses Brackets Braces and Quotes",
     "Catch Mixed Usage of Single and Double Quotes",
     "Catch Use of Assignment Operator Instead of Equality Operator",
     "Catch Missing Open and Closing Parenthesis After a Function Call",
