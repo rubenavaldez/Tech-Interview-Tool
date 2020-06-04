@@ -429,6 +429,7 @@ $(document).on("click", "#get-question", function () {
             questionSubmodule.challenges.length-1)]; 
         let challengeUrl = moduleArray[moduleIndex].moduleURL + questionSubmodule.name.toLowerCase().split(" ").join("-") + "/" +challengeText.toLowerCase().split(" ").join("-") ; // need submodule url piece
             console.log(challengeUrl)
+            window.open(challengeUrl, "challenge-window", "height=800,width=1200");
         // console.log("Question Submodule")
 
         //Push the submodule and challenge to HTML
