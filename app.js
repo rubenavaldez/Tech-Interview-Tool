@@ -107,6 +107,157 @@ const basicJavascriptModuleNames=[
     "Use the Conditional (Ternary) Operator",
     "Use Multiple Conditional (Ternary) Operators"
     ];
+
+const ES6ModuleNames=[
+    'Explore Differences Between the var and let Keywords',
+    'Compare Scopes of the var and let Keywords',
+    'Declare a Read-Only Variable with the const Keyword',
+    'Mutate an Array Declared with const',
+    'Prevent Object Mutation',
+    'Use Arrow Functions to Write Concise Anonymous Functions',
+    'Write Arrow Functions with Parameters',
+    'Write Higher-Order Arrow Functions',
+    'Set Default Parameters for Your Functions',
+    'Use the Rest Operator with Function Parameters',
+    'Use the Spread Operator to Evaluate Arrays In-Place',
+    'Use Destructuring Assignment to Assign Variables from Objects',
+    'Use Destructuring Assignment to Assign Variables from Nested Objects',
+    'Use Destructuring Assignment to Assign Variables from Arrays',
+    'Use Destructuring Assignment with the Rest Operator to Reassign Array Elements',
+    'Use Destructuring Assignment to Pass an Object as a Function\'s Parameters',
+    'Create Strings using Template Literals',
+    'Write Concise Object Literal Declarations Using Simple Fields',
+    'Write Concise Declarative Functions with ES6',
+    'Use class Syntax to Define a Constructor Function',
+    'Use getters and setters to Control Access to an Object',
+    'Understand the Differences Between import and require',
+    'Use export to Reuse a Code Block',
+    'Use * to Import Everything from a File',
+    'Create an Export Fallback with export default',
+    'Import a Default Export'
+    ];
+
+const RegExModuleNames=[
+    "Using the Test Method",
+    "Match Literal Strings",
+    "Match a Literal String with Different Possibilities",
+    "Ignore Case While Matching",
+    "Extract Matches",
+    "Find More Than the First Match",
+    "Match Anything with Wildcard Period",
+    "Match Single Character with Multiple Possibilities",
+    "Match Letters of the Alphabet",
+    "Match Numbers and Letters of the Alphabet",
+    "Match Single Characters Not Specified",
+    "Match Characters that Occur One or More Times",
+    "Match Characters that Occur Zero or More Times",
+    "Find Characters with Lazy Matching",
+    "Find One or More Criminals in a Hunt",
+    "Match Beginning String Patterns",
+    "Match Ending String Patterns",
+    "Match All Letters and Numbers",
+    "Match Everything But Letters and Numbers",
+    "Match All Numbers",
+    "Match All Non-Numbers",
+    "Restrict Possible Usernames",
+    "Match Whitespace",
+    "Match Non-Whitespace Characters",
+    "Specify Upper and Lower Number of Matches",
+    "Specify Only the Lower Number of Matches",
+    "Specify Exact Number of Matches",
+    "Check for All or None",
+    "Positive and Negative Lookahead",
+    "Check For Mixed Grouping of Characters",
+    "Reuse Patterns Using Capture Groups",
+    "Use Capture Groups to Search and Replace",
+    "Remove Whitespace from Start and End"
+];
+
+const DebuggingModuleNames=[
+    "Use the JavaScript Console to Check the Value of a Variable",
+    "Understanding the Differences between the freeCodeCamp and Browser Console",
+    "Use typeof to Check the Type of a Variable",
+    "Catch Misspelled Variable and Function Names",
+    "Catch Unclosed Parentheses, Brackets, Braces and Quotes",
+    "Catch Mixed Usage of Single and Double Quotes",
+    "Catch Use of Assignment Operator Instead of Equality Operator",
+    "Catch Missing Open and Closing Parenthesis After a Function Call",
+    "Catch Arguments Passed in the Wrong Order When Calling a Function",
+    "Catch Off By One Errors When Using Indexing",
+    "Use Caution When Reinitializing Variables Inside a Loop",
+    "Prevent Infinite Loops with a Valid Terminal Condition"
+];
+
+const BasicDataStructuresModuleNames=[
+    "Use an Array to Store a Collection of Data",
+    "Access an Array's Contents Using Bracket Notation",
+    "Add Items to an Array with push() and unshift()",
+    "Remove Items from an Array with pop() and shift()",
+    "Remove Items Using splice()",
+    "Add Items Using splice()",
+    "Copy Array Items Using slice()",
+    "Copy an Array with the Spread Operator",
+    "Combine Arrays with the Spread Operator",
+    "Check For The Presence of an Element With indexOf()",
+    "Iterate Through All an Array's Items Using For Loops",
+    "Create complex multi-dimensional arrays",
+    "Add Key-Value Pairs to JavaScript Objects",
+    "Modify an Object Nested Within an Object",
+    "Access Property Names with Bracket Notation",
+    "Use the delete Keyword to Remove Object Properties",
+    "Check if an Object has a Property",
+    " Iterate Through the Keys of an Object with a for...in Statement",
+    "Generate an Array of All Object Keys with Object.keys()",
+    "Modify an Array Stored in an Object"
+];
+
+const BasicAlgorithmScriptingModuleNames=[
+    "Convert Celsius to Fahrenheit",
+    "Reverse a String",
+    "Factorialize a Number",
+    "Find the Longest Word in a String",
+    "Return Largest Numbers in Arrays",
+    "Confirm the Ending",
+    "Repeat a String Repeat a String",
+    "Truncate a String",
+    "Finders Keepers",
+    "Boo who",
+    "Title Case a Sentence",
+    "Slice and Splice",
+    "Falsy Bouncer",
+    "Where do I Belong",
+    "Mutations",
+    "Chunky Monkey"
+];
+
+const ObjectOrientedProgrammingModuleNames=[
+    "Create a Basic JavaScript Object",
+    "Use Dot Notation to Access the Properties of an Object",
+    "Create a Method on an Object",
+    "Make Code More Reusable with the this Keyword",
+    "Define a Constructor Function",
+    "Use a Constructor to Create Objects",
+    "Extend Constructors to Receive Arguments",
+    "Verify an Object's Constructor with instanceof",
+    "Understand Own Properties",
+    "Use Prototype Properties to Reduce Duplicate Code",
+    "Iterate Over All Properties",
+    "Understand the Constructor Property",
+    "Change the Prototype to a New Object",
+    "Remember to Set the Constructor Property when Changing the Prototype",
+    "Understand Where an Object’s Prototype Comes From",
+    "Understand the Prototype Chain",
+    "Use Inheritance So You Don't Repeat Yourself",
+    "Inherit Behaviors from a Supertype",
+    "Set the Child's Prototype to an Instance of the Parent",
+    "Reset an Inherited Constructor Property",
+    "Add Methods After Inheritance",
+    "Override Inherited Methods",
+    "Use a Mixin to Add Common Behavior Between Unrelated Objects",
+    "Use Closure to Protect Properties Within an Object from Being Modified Externally",
+    "Understand the Immediately Invoked Function Expression (IIFE)",
+    "Use an IIFE to Create a Module"
+];
 let currentStudent = undefined;
 $(document).on("click", "#get-student", function () {
     
@@ -200,12 +351,12 @@ const RWD = new Module("Responsive Web Design", 7, [
 ], "./images/html_op.png")
 const JavaScript = new Module("JavaScript",9, [
        {name:"Basic Javascript", challenges:basicJavascriptModuleNames},
-       {name:"ES6", challenges:26},
-       {name:"Regular Expressions", challenges:33},
-       {name:"Debugging", challenges:12},
-       {name:"Basic Data Structures", challenges:20},
-       {name:"Basic Algorithm Scripting", challenges:16},
-       {name:"Object Oriented Programming", challenges:26},
+       {name:"ES6", challenges:ES6ModuleNames},
+       {name:"Regular Expressions", challenges:RegExModuleNames},
+       {name:"Debugging", challenges:DebuggingModuleNames},
+       {name:"Basic Data Structures", challenges:BasicDataStructuresModuleNames},
+       {name:"Basic Algorithm Scripting", challenges:BasicAlgorithmScriptingModuleNames},
+       {name:"Object Oriented Programming", challenges:ObjectOrientedProgrammingModuleNames},
        {name:"Functional Programming", challenges:23},
        {name:"Intermediate Algorithm Scripting", challenges:21}],
         "./images/javascript_new.png")
@@ -266,7 +417,7 @@ $(document).on("click", "#get-question", function () {
         //Set to javascript with array index during the prelimiary testing
                                     //Replace 1 with module Index
         //manually set to JavaScript
-        moduleSelector = 0;
+        moduleSelector = 4;
         moduleIndex = 1;
 
         //Module selcted at random
@@ -284,7 +435,7 @@ $(document).on("click", "#get-question", function () {
         // $("#challenge-div").text("Challenge " +Math.ceil(Math.random() *
         //     questionSubmodule.challenges))
         $("#challenge-div").text(questionSubmodule.challenges[Math.ceil(Math.random() *
-        questionSubmodule.challenges.length)])
+        questionSubmodule.challenges.length-1)])
         
         
         
@@ -301,4 +452,9 @@ $(document).on("click", "#get-question", function () {
     }
 })
 
+
+/// idea : automatically create a link by joining the string with - 
+//have it open a new window automatically so the studen't don't see 
+//core knowledge card
+//TES card
 
