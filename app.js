@@ -41,33 +41,33 @@ const JavaScript = new Module("JavaScript",9, [
        {name:"Basic Data Structures", challenges:BasicDataStructuresModuleNames},
        {name:"Basic Algorithm Scripting", challenges:BasicAlgorithmScriptingModuleNames},
        {name:"Object Oriented Programming", challenges:ObjectOrientedProgrammingModuleNames},
-       {name:"Functional Programming", challenges:23},
-       {name:"Intermediate Algorithm Scripting", challenges:21}],
+       {name:"Functional Programming", challenges:FunctionalProgrammingModuleNames},
+       {name:"Intermediate Algorithm Scripting", challenges:IntermediateAlgorithmScriptingModuleNames}],
         "./images/javascript_new.png", "http://code.perseverenow.org/learn/javascript-algorithms-and-data-structures/")
 
 const FEL = new Module("Front End Libraries",6, [
-        {name:"Bootstrap", challenges:31},
-        {name:"jQuery", challenges:18},
-        {name:"Sass", challenges:9},
-        {name:"React", challenges:48},
-        {name:"Redux", challenges:17},
-        {name:"React and Redux", challenges:10}
+        {name:"Bootstrap", challenges:BootstrapModulenames},
+        {name:"jQuery", challenges:JQueryModuleNames},
+        {name:"Sass", challenges:SassModuleNames},
+        {name:"React", challenges:ReactModuleNames},
+        {name:"Redux", challenges:ReduxModuleNames},
+        {name:"React and Redux", challenges:ReactAndReduxModuleNames,}
 ],'./images/jquery2.png', "http://code.perseverenow.org/learn/front-end-libraries/" )
 const DataVisualization = new Module("Data Visualization",2, [
-    {name:"Data Visualization with D3", challenges:29},
-    {name:"JSON APIs and Ajax", challenges:9}], "", "http://code.perseverenow.org/learn/data-visualization/" )
+    {name:"Data Visualization with D3", challenges:DataVisualizationWithD3},
+    {name:"JSON APIs and Ajax", challenges:JSONAPIsAndAjaxModuleNames}], "./images/d3js-icon.png", "http://code.perseverenow.org/learn/data-visualization/" )
    // console.log(RWD)
 
 const APIandMicro = new Module("FAPI's and Microservices",3, [
     {name:"Managing Packages with Npm", challenges:10},
     {name:"Basic Node and Express", challenges:12},
     {name:"MongoDB and Mongoose", challenges:9}
-], "","http://code.perseverenow.org/learn/apis-and-microservices/" ) 
+], "./","http://code.perseverenow.org/learn/apis-and-microservices/" ) 
 const InfoSec = new Module("Information Security with HelmetJS",3, [
-    {name:"Information Security with HelmetJS", challenges:14},
-    {name:"Quality Assurance and Testing with Chai", challenges:24},
-    {name:"Advanced Node and Express", challenges:22}
-],"", "http://code.perseverenow.org/learn/information-security-and-quality-assurance/")   
+    {name:"Information Security with HelmetJS", challenges:InformationSecurityWithHelmetJSModuleNames},
+    {name:"Quality Assurance and Testing with Chai", challenges:QualityAssuranceAndTestingWithChaiModuleNames},
+    {name:"Advanced Node and Express", challenges:AdvancedNodeandExpressModuleNames}
+],"./images/mongo.png", "http://code.perseverenow.org/learn/information-security-and-quality-assurance/")   
 
 //console.log(JavaScript)
 const moduleArray= [RWD, JavaScript, FEL, DataVisualization, APIandMicro, InfoSec] // add these submodule as you progres
@@ -101,8 +101,12 @@ $(document).on("click", "#get-question", function () {
         //Set to javascript with array index during the prelimiary testing
                                     //Replace 1 with module Index
         //manually set to JavaScript
-        moduleSelector = 4;
-        moduleIndex = 1;
+        // moduleSelector = 3;
+        // moduleIndex = 1;
+
+        //All Module Test
+        moduleIndex = Math.floor(Math.random() *5)
+        moduleSelector= moduleArray[moduleIndex].subMods
 
         //Module selcted at random
         let questionSubmodule = moduleArray[moduleIndex].pccArr[
@@ -116,7 +120,7 @@ $(document).on("click", "#get-question", function () {
             //opens a new window with the challenge url
             window.open(challengeUrl, "challenge-window", "height=800,width=1200");
         // console.log("Question Submodule")
-
+            console.log(`Module ${moduleArray[moduleIndex].name} Submodule ${questionSubmodule.name} Challenge ${challengeText}`)
         //Push the submodule and challenge to HTML
         $("#question-div").text(questionSubmodule.name)
         $("#module-div").text(moduleArray[moduleIndex].name)
