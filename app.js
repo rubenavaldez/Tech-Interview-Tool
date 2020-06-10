@@ -24,13 +24,13 @@ class Module {
 }
 
 const RWD = new Module("Responsive Web Design", 7, [
-    {name:"Basic HTML and HTML5", challenges:28},
-    {name:"Basic CSS", challenges:44},
-    {name:"Applied Visual Design", challenges:52},
-    {name:"Applied Accessibility", challenges:22},
-    {name:"Responsive Web Design Principles", challenges:4},
-    {name:"CSS Flex Box", challenges:17},
-    {name:"CSS Grid", challenges:22}
+    {name:"Basic HTML and HTML5", challenges:BasicHTMLandHTML5ModuleNames},
+    {name:"Basic CSS", challenges:BasicCSSModuleNames},
+    {name:"Applied Visual Design", challenges:AppliedVisualDesignModuleNames},
+    {name:"Applied Accessibility", challenges:AppliedAccessibilityModuleNames},
+    {name:"Responsive Web Design Principles", challenges:ResponsiveWebDesignPriniciplesModuleNames},
+    {name:"CSS Flex Box", challenges:CSSFlexboxModuleNames},
+    {name:"CSS Grid", challenges:CSSGridModuleNames}
 
 ], "./images/html_op.png", "http://code.perseverenow.org/learn/responsive-web-design/")
 const JavaScript = new Module("JavaScript",9, [
