@@ -57,10 +57,10 @@ const SassModuleNames =[
     "Store Data with Sass Variables",
     "Nest CSS with Sass",
     "Create Reusable CSS with Mixins",
-    "Use @if and @else to Add Logic To Your Styles",
-    "Use @for to Create a Sass Loop",
-    "Use @each to Map Over Items in a List",
-    "Apply a Style Until a Condition is Met with @while",   //might throw an error
+    "Use if and else to Add Logic To Your Styles",
+    "Use for to Create a Sass Loop",
+    "Use each to Map Over Items in a List",
+    "Apply a Style Until a Condition is Met with while",   //might throw an error
     "Split Your Styles into Smaller Chunks with Partials",
     "Extend One Set of CSS Styles to Another Element"
 ]
@@ -90,7 +90,7 @@ const ReactModuleNames =[
     "Render State in the User Interface",
     "Render State in the User Interface Another Way",
     "Set State with this.setState",
-    "Bind 'this' to a Class Method",
+    "Bind this to a Class Method",
     "Use State to Toggle an Element",
     "Write a Simple Counter",
     "Create a Controlled Input",
@@ -110,9 +110,9 @@ const ReactModuleNames =[
     "Use a Ternary Expression for Conditional Rendering",
     "Render Conditionally from Props",
     "Change Inline CSS Conditionally Based on Component State",
-    "Use Array.map() to Dynamically Render Elements",
+    "Use Array.map to Dynamically Render Elements",
     "Give Sibling Elements a Unique Key Attribute",
-    "Use Array.filter() to Dynamically Filter an Array",
+    "Use Array.filter to Dynamically Filter an Array",
     "Render React on the Server with renderToString"
 ]
 

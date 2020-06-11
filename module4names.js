@@ -38,6 +38,6 @@ const JSONAPIsAndAjaxModuleNames =[
     "Convert JSON Data to HTML",
     "Render Images from Data Sources",
     "Pre-filter JSON to Get the Data You Need",
-    "Get Geolocation Data to Find A User's GPS Coordinates",
+    "Get Geolocation Data to Find A Users GPS Coordinates",
     "Post Data with the JavaScript XMLHttpRequest Method"
 ]

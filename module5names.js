@@ -33,13 +33,13 @@ const MongoDBAndMongoose =[
     "Install and Set Up Mongoose",
     "Create a Model",
     "Create and Save a Record of a Model",
-    "Create Many Records with model.create()",
-    "Use model.find() to Search Your Database",
-    "Use model.findOne() to Return a Single Matching Document from Your Database",
-    "Use model.findById() to Search Your Database By _id",                         //might throw an error
-    "Perform Classic Updates by Running Find, Edit, then Save",
-    "Perform New Updates on a Document Using model.findOneAndUpdate()",
+    "Create Many Records with model.create",
+    "Use model.find to Search Your Database",
+    "Use model.findOne to Return a Single Matching Document from Your Database",
+    "Use model.findById to Search Your Database By id",                         //might throw an error
+    "Perform Classic Updates by Running Find Edit then Save",
+    "Perform New Updates on a Document Using model.findOneAndUpdate",
     "Delete One Document Using model.findByIdAndRemove",
-    "Delete Many Documents with model.remove()",
+    "Delete Many Documents with model.remove",
     "Chain Search Query Helpers to Narrow Search Results"
 ]

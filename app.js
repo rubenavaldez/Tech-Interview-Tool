@@ -58,11 +58,11 @@ const DataVisualization = new Module("Data Visualization",2, [
     {name:"JSON APIs and Ajax", challenges:JSONAPIsAndAjaxModuleNames}], "./images/d3js-icon.png", "http://code.perseverenow.org/learn/data-visualization/" )
    // console.log(RWD)
 
-const APIandMicro = new Module("FAPI's and Microservices",3, [
-    {name:"Managing Packages with Npm", challenges:10},
-    {name:"Basic Node and Express", challenges:12},
-    {name:"MongoDB and Mongoose", challenges:9}
-], "./","http://code.perseverenow.org/learn/apis-and-microservices/" ) 
+const APIandMicro = new Module("API's and Microservices",3, [
+    {name:"Managing Packages with Npm", challenges:ManagingPackagesWithNPMModuleNames},
+    {name:"Basic Node and Express", challenges:BasicNodeAndExpress},
+    {name:"MongoDB and Mongoose", challenges:MongoDBAndMongoose}
+], "./images/node.png","http://code.perseverenow.org/learn/apis-and-microservices/" ) 
 const InfoSec = new Module("Information Security with HelmetJS",3, [
     {name:"Information Security with HelmetJS", challenges:InformationSecurityWithHelmetJSModuleNames},
     {name:"Quality Assurance and Testing with Chai", challenges:QualityAssuranceAndTestingWithChaiModuleNames},
@@ -90,6 +90,10 @@ $(document).on("click", "#get-question", function () {
         // console.log(RWD.subMods)
         //which module
         let moduleIndex = Math.floor(Math.random()*  currentStudent.module)
+
+        //all module test
+        moduleIndex = Math.floor(Math.random()*  6)
+        moduleSelector = moduleArray[moduleIndex].subMods
         // console.log(moduleIndex)
         if(moduleIndex < currentStudent.module-1){
             console.log("The student has completed this module")
@@ -105,8 +109,8 @@ $(document).on("click", "#get-question", function () {
         // moduleIndex = 1;
 
         //All Module Test
-        moduleIndex = Math.floor(Math.random() *5)
-        moduleSelector= moduleArray[moduleIndex].subMods
+        // moduleIndex = Math.floor(Math.random() *5)
+        // moduleSelector= moduleArray[moduleIndex].subMods
 
         //Module selcted at random
         let questionSubmodule = moduleArray[moduleIndex].pccArr[
@@ -114,6 +118,7 @@ $(document).on("click", "#get-question", function () {
         ]
         let challengeText = questionSubmodule.challenges[Math.ceil(Math.random() *
             questionSubmodule.challenges.length-1)]; 
+            console.log( questionSubmodule)
         let challengeUrl = moduleArray[moduleIndex].moduleURL + questionSubmodule.name.toLowerCase().split(" ").join("-") + "/" +challengeText.toLowerCase().split(" ").join("-") ; // need submodule url piece
             console.log(challengeUrl)
             
