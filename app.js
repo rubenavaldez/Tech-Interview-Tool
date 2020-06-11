@@ -92,8 +92,8 @@ $(document).on("click", "#get-question", function () {
         let moduleIndex = Math.floor(Math.random()*  currentStudent.module)
 
         //all module test
-        moduleIndex = Math.floor(Math.random()*  6)
-        moduleSelector = moduleArray[moduleIndex].subMods
+        // moduleIndex = Math.floor(Math.random()*  6)
+        // moduleSelector = moduleArray[moduleIndex].subMods
         // console.log(moduleIndex)
         if(moduleIndex < currentStudent.module-1){
             console.log("The student has completed this module")
@@ -105,8 +105,8 @@ $(document).on("click", "#get-question", function () {
         //Set to javascript with array index during the prelimiary testing
                                     //Replace 1 with module Index
         //manually set to JavaScript
-        // moduleSelector = 3;
-        // moduleIndex = 1;
+        moduleSelector = 3;
+        moduleIndex = 1;
 
         //All Module Test
         // moduleIndex = Math.floor(Math.random() *5)
@@ -125,7 +125,7 @@ $(document).on("click", "#get-question", function () {
             //opens a new window with the challenge url
             window.open(challengeUrl, "challenge-window", "height=800,width=1200");
         // console.log("Question Submodule")
-            console.log(`Module ${moduleArray[moduleIndex].name} Submodule ${questionSubmodule.name} Challenge ${challengeText}`)
+           // console.log(`Module ${moduleArray[moduleIndex].name} Submodule ${questionSubmodule.name} Challenge ${challengeText}`)
         //Push the submodule and challenge to HTML
         $("#question-div").text(questionSubmodule.name)
         $("#module-div").text(moduleArray[moduleIndex].name)
