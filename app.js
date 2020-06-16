@@ -29,7 +29,7 @@ const RWD = new Module("Responsive Web Design", 7, [
     {name:"Applied Visual Design", challenges:AppliedVisualDesignModuleNames},
     {name:"Applied Accessibility", challenges:AppliedAccessibilityModuleNames},
     {name:"Responsive Web Design Principles", challenges:ResponsiveWebDesignPriniciplesModuleNames},
-    {name:"CSS Flex Box", challenges:CSSFlexboxModuleNames},
+    {name:"CSS FlexBox", challenges:CSSFlexboxModuleNames},
     {name:"CSS Grid", challenges:CSSGridModuleNames}
 
 ], "./images/html_op.png", "http://code.perseverenow.org/learn/responsive-web-design/")
