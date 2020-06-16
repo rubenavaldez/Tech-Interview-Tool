@@ -105,8 +105,8 @@ $(document).on("click", "#get-question", function () {
         //Set to javascript with array index during the prelimiary testing
                                     //Replace 1 with module Index
         //manually set to JavaScript
-        moduleSelector = 3;
-        moduleIndex = 1;
+        // moduleSelector = 3;
+        // moduleIndex = 1;
 
         //All Module Test
         // moduleIndex = Math.floor(Math.random() *5)
