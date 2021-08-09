@@ -32,7 +32,7 @@ const RWD = new Module("Responsive Web Design", 7, [
     {name:"CSS FlexBox", challenges:CSSFlexboxModuleNames},
     {name:"CSS Grid", challenges:CSSGridModuleNames}
 
-], "./images/html_op.png", "192.168.0.253:8000/learn/responsive-web-design/")
+], "./images/html_op.png", "http://192.168.0.253:8000/learn/responsive-web-design/")
 const JavaScript = new Module("JavaScript",9, [
        {name:"Basic Javascript", challenges:basicJavascriptModuleNames},
        {name:"ES6", challenges:ES6ModuleNames},
@@ -43,7 +43,7 @@ const JavaScript = new Module("JavaScript",9, [
        {name:"Object Oriented Programming", challenges:ObjectOrientedProgrammingModuleNames},
        {name:"Functional Programming", challenges:FunctionalProgrammingModuleNames},
        {name:"Intermediate Algorithm Scripting", challenges:IntermediateAlgorithmScriptingModuleNames}],
-        "./images/javascript_new.png", "192.168.0.253:8000/learn/javascript-algorithms-and-data-structures/")
+        "./images/javascript_new.png", "http://192.168.0.253:8000/learn/javascript-algorithms-and-data-structures/")
 
 const FEL = new Module("Front End Libraries",6, [
         {name:"Bootstrap", challenges:BootstrapModulenames},
@@ -52,22 +52,22 @@ const FEL = new Module("Front End Libraries",6, [
         {name:"React", challenges:ReactModuleNames},
         {name:"Redux", challenges:ReduxModuleNames},
         {name:"React and Redux", challenges:ReactAndReduxModuleNames,}
-],'./images/jquery2.png', "192.168.0.253:8000/learn/front-end-libraries/" )
+],'./images/jquery2.png', "http://192.168.0.253:8000/learn/front-end-libraries/" )
 const DataVisualization = new Module("Data Visualization",2, [
     {name:"Data Visualization with D3", challenges:DataVisualizationWithD3},
-    {name:"JSON APIs and Ajax", challenges:JSONAPIsAndAjaxModuleNames}], "./images/d3js-icon.png", "192.168.0.253:8000/learn/data-visualization/" )
+    {name:"JSON APIs and Ajax", challenges:JSONAPIsAndAjaxModuleNames}], "./images/d3js-icon.png", "http://192.168.0.253:8000/learn/data-visualization/" )
    // console.log(RWD)
 
 const APIandMicro = new Module("API's and Microservices",3, [
     {name:"Managing Packages with Npm", challenges:ManagingPackagesWithNPMModuleNames},
     {name:"Basic Node and Express", challenges:BasicNodeAndExpress},
     {name:"MongoDB and Mongoose", challenges:MongoDBAndMongoose}
-], "./images/node.png","192.168.0.253:8000/learn/apis-and-microservices/" ) 
+], "./images/node.png","http://192.168.0.253:8000/learn/apis-and-microservices/" ) 
 const InfoSec = new Module("Information Security with HelmetJS",3, [
     {name:"Information Security with HelmetJS", challenges:InformationSecurityWithHelmetJSModuleNames},
     {name:"Quality Assurance and Testing with Chai", challenges:QualityAssuranceAndTestingWithChaiModuleNames},
     {name:"Advanced Node and Express", challenges:AdvancedNodeandExpressModuleNames}
-],"./images/mongo.png", "192.168.0.253:8000/learn/information-security-and-quality-assurance/")   
+],"./images/mongo.png", "http://192.168.0.253:8000/learn/information-security-and-quality-assurance/")   
 
 //console.log(JavaScript)
 const moduleArray= [RWD, JavaScript, FEL, DataVisualization, APIandMicro, InfoSec] // add these submodule as you progres
