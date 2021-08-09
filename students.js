@@ -7,8 +7,8 @@ class Student {
     }
 }
 //Name, Current Module, Current Submodule
-const LCorwin = new Student("LCorwin", 2,1)
-const RCorwin = new Student("RCorwin", 2,1)
+const LCorwin = new Student("L. Corwin", 2,1)
+const RCorwin = new Student("R. Corwin", 2,1)
 const Duchene = new Student("Duchene", 2,1)
 const Galvez = new Student("Galvez", 2,1)
 const Grover = new Student("Grover", 2,1)

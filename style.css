@@ -1,12 +1,15 @@
-#get-student{
+/* #get-student{
     margin-left: 300px;
-}
+} */
 .card{
     margin: auto;
     box-shadow: 3px 3px 5px red;
 }
 #button-div{
-    margin-left:23%;
+    clear:both;
+    margin:auto;
+    display: flex;
+  justify-content: center;
 }
 #get-student{
     float: left;
